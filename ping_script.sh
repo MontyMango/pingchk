@@ -27,7 +27,7 @@ do
 	
 	# If the host is running
 	else
-		echo "$i | $HOST" >> $RESULTS
+		echo -e "$i \t|\t $HOST" >> $RESULTS
 	fi
 done
 
