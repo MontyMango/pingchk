@@ -1,0 +1,1 @@
+-- Delete this line after reading! Welcome to pingchk! Fill this file with the hosts that you want to ping! --
