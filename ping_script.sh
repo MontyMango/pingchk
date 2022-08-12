@@ -4,14 +4,15 @@
 HOST_LIST=/home/localadmin/Documents/Hosts.txt
 NOT_FOUND=/tmp/$$
 FOUND=/tmp/$$1
-DATE=$(date +%R-%m-%d-%Y)
+DATE=$(date +%m-%d-%Y-%R)
 RESULTS=Scan_Test_$DATE.txt
 
 F_NUM=0
 NF_NUM=0
 
+$("./sort_hosts-txt.sh")
+
 touch $RESULTS
-touch $FOUND
 
 $(echo date) > $RESULTS
 
@@ -35,12 +36,14 @@ do
 	
 done
 
+# echos the found hosts
 echo "" >> $RESULTS
 echo "" >> $RESULTS
-echo -e "Found\t\t|\tTotal $F_NUM:" >> $RESULTS
+echo -e "Found / Online \t\t|\tTotal $F_NUM:" >> $RESULTS
 cat $FOUND >> $RESULTS
 
+# echos the offline hosts
 echo "" >> $RESULTS
 echo "" >> $RESULTS
-echo -e "Not Found | Total $NF_NUM:" >> $RESULTS
+echo -e "Not Found / Offline | Total $NF_NUM:" >> $RESULTS
 cat $NOT_FOUND >> $RESULTS
