@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Looks in the Hosts.txt
-HOST_LIST=/home/localadmin/Documents/Hosts.txt
+HOST_LIST=$(pwd)/Hosts.txt
 NOT_FOUND=/tmp/$$
 FOUND=/tmp/$$1
 DATE=$(date +%m-%d-%Y-%R)
@@ -10,9 +10,11 @@ RESULTS=Scan_Test_$DATE.txt
 F_NUM=0
 NF_NUM=0
 
-$("./sort_hosts-txt.sh")
+echo $HOST_LIST
+$("./sort_hosts.sh")
 
 touch $RESULTS
+touch $FOUND
 
 $(echo date) > $RESULTS
 
