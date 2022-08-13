@@ -1,6 +1,5 @@
 # What is pingchk?
-pingchk scans your local network to find the listed computers  a network scanner that uses a list to 
-to see if they are awake, and can be remoted into.
+pingchk scans your local network to find the listed computers, and lists the hostname and IP address in a text file.
 
 
 
