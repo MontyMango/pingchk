@@ -1,5 +1,5 @@
 #!/bin/bash
-HOST_LIST=/home/localadmin/Documents/Hosts.txt
+HOST_LIST=$(pwd)/Hosts.txt
 TMP_LIST=/tmp/$$
 
 # Stores sorted list to temp file, overwrites the host list with the temp file.
