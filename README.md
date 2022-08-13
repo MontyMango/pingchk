@@ -2,6 +2,10 @@
 pingchk scans your local network to find the listed computers  a network scanner that uses a list to 
 to see if they are awake, and can be remoted into.
 
+
+
+
+
 # How do I use these scripts?
 
 ## First: Make the scripts executable
@@ -20,6 +24,9 @@ Do not worry about sorting, the program will sort it when you run it everytime!
 To manually execute the ping script:
 > ./ping_script.sh
 Let it run its course and it will make a results text with the title being the date and time of when the script was executed. 
+
+
+
 
 
 # How do I automate this script for it to go off every ______ ?
