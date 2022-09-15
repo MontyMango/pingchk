@@ -1,17 +1,21 @@
 #!/bin/bash
 
-# Looks in the Hosts.txt
-HOST_LIST=$(pwd)/Hosts.txt
+HOST_LIST=./Hosts.txt
+SORT_METHOD=./scripts/sort_hosts.sh
+
+# Stores hosts temporarily in your /tmp directory
 NOT_FOUND=/tmp/$$
 FOUND=/tmp/$$1
-DATE=$(date +%m-%d-%Y-%R)
-RESULTS=Scan_Test_$DATE.txt
 
+DATE=$(date +%m-%d-%Y-%R)
+RESULTS=./results/Results-$DATE.txt
+
+# Counters
 F_NUM=0
 NF_NUM=0
 
-echo $HOST_LIST
-$("./sort_hosts.sh")
+# Sort the hosts before 
+$(bash $SORT_METHOD)
 
 touch $RESULTS
 touch $FOUND
