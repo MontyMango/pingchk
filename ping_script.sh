@@ -53,3 +53,8 @@ echo "" >> $RESULTS
 echo "" >> $RESULTS
 echo -e "Not Found / Offline | Total $NF_NUM:" >> $RESULTS
 cat $NOT_FOUND >> $RESULTS
+
+# echos the files to the current results.txt
+echo "Previous results can be found in the results directory" > $LASTRUN
+echo "" >> $LASTRUN
+cat $RESULTS >> $LASTRUN
