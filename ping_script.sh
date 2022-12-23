@@ -1,6 +1,7 @@
 #!/bin/bash
 
 HOST_LIST=./Hosts.txt
+LASTRUN=./Results.txt
 SORT_METHOD=./scripts/sort_hosts.sh
 
 # Stores hosts temporarily in your /tmp directory
