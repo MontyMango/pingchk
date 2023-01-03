@@ -1,27 +1,27 @@
 # What is pingchk?
-pingchk scans your local network to find the listed computers, and lists the hostname and IP address in a results text file.
+pingchk scans your local network to find the listed computers, and lists the hostname and IP address in a results text file. This only works on Linux systems right now. 
 
 
 
 # How do I use these scripts?
 
-## First: Make the scripts executable
-Unfortunately, there is no automated way of making these scripts executable... right now. So do this for now to make them executable:
+## First: Run start_up.sh
+To make the scripts executable, simply run the start_up.sh by typing:
 ```
-chmod a+x ping_script.sh
-chmod a+x sort_hosts.sh
+bash start_up.sh
 ```
+while in pingchk's directory. This will output information regarding about using the software.
 
 ## Second: Populate Hosts.txt
 Delete the first line, and populate the list with the hosts that you want to check for!
 Do not worry about sorting, the program will sort it when you run it everytime!
 
 ## Third: Manually executing ping_script.sh 
-To manually execute the ping script:
+To manually execute ping_script.sh, run this in the terminal:
 ```
 ./ping_script.sh
 ```
-Let it run its course and it will make a results text with the title being the date and time of when the script was executed. 
+Let it run its course and it will make a results text with the title being the date and time of when the script was executed inside of the results directory.
 
 
 
