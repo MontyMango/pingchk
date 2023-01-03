@@ -1,6 +1,3 @@
-# Build Settings
-theme: dinky
-
 # What is pingchk?
 pingchk scans your local network to find the listed computers, and lists the hostname and IP address in a results text file. This only works on Linux systems right now. 
 
